@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE2A6B272623B76B00C14E74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2A6B262623B76B00C14E74 /* AppDelegate.swift */; };
+		AE2A6B292623B76B00C14E74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2A6B282623B76B00C14E74 /* SceneDelegate.swift */; };
+		AE2A6B2B2623B76B00C14E74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2A6B2A2623B76B00C14E74 /* ViewController.swift */; };
+		AE2A6B2E2623B76B00C14E74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE2A6B2C2623B76B00C14E74 /* Main.storyboard */; };
+		AE2A6B302623B76E00C14E74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE2A6B2F2623B76E00C14E74 /* Assets.xcassets */; };
+		AE2A6B332623B76E00C14E74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE2A6B312623B76E00C14E74 /* LaunchScreen.storyboard */; };
+		AE2A6B3E2623B76E00C14E74 /* RoundedCornerPolygonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2A6B3D2623B76E00C14E74 /* RoundedCornerPolygonTests.swift */; };
+		AE2A6B492623B76E00C14E74 /* RoundedCornerPolygonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2A6B482623B76E00C14E74 /* RoundedCornerPolygonUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE2A6B3A2623B76E00C14E74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE2A6B1B2623B76B00C14E74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE2A6B222623B76B00C14E74;
+			remoteInfo = RoundedCornerPolygon;
+		};
+		AE2A6B452623B76E00C14E74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE2A6B1B2623B76B00C14E74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE2A6B222623B76B00C14E74;
+			remoteInfo = RoundedCornerPolygon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AE2A6B232623B76B00C14E74 /* RoundedCornerPolygon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoundedCornerPolygon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE2A6B262623B76B00C14E74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE2A6B282623B76B00C14E74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AE2A6B2A2623B76B00C14E74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE2A6B2D2623B76B00C14E74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE2A6B2F2623B76E00C14E74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE2A6B322623B76E00C14E74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE2A6B342623B76E00C14E74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE2A6B392623B76E00C14E74 /* RoundedCornerPolygonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoundedCornerPolygonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE2A6B3D2623B76E00C14E74 /* RoundedCornerPolygonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerPolygonTests.swift; sourceTree = "<group>"; };
+		AE2A6B3F2623B76E00C14E74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE2A6B442623B76E00C14E74 /* RoundedCornerPolygonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoundedCornerPolygonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE2A6B482623B76E00C14E74 /* RoundedCornerPolygonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerPolygonUITests.swift; sourceTree = "<group>"; };
+		AE2A6B4A2623B76E00C14E74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE2A6B202623B76B00C14E74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE2A6B362623B76E00C14E74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE2A6B412623B76E00C14E74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE2A6B1A2623B76B00C14E74 = {
+			isa = PBXGroup;
+			children = (
+				AE2A6B252623B76B00C14E74 /* RoundedCornerPolygon */,
+				AE2A6B3C2623B76E00C14E74 /* RoundedCornerPolygonTests */,
+				AE2A6B472623B76E00C14E74 /* RoundedCornerPolygonUITests */,
+				AE2A6B242623B76B00C14E74 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE2A6B242623B76B00C14E74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE2A6B232623B76B00C14E74 /* RoundedCornerPolygon.app */,
+				AE2A6B392623B76E00C14E74 /* RoundedCornerPolygonTests.xctest */,
+				AE2A6B442623B76E00C14E74 /* RoundedCornerPolygonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE2A6B252623B76B00C14E74 /* RoundedCornerPolygon */ = {
+			isa = PBXGroup;
+			children = (
+				AE2A6B262623B76B00C14E74 /* AppDelegate.swift */,
+				AE2A6B282623B76B00C14E74 /* SceneDelegate.swift */,
+				AE2A6B2A2623B76B00C14E74 /* ViewController.swift */,
+				AE2A6B2C2623B76B00C14E74 /* Main.storyboard */,
+				AE2A6B2F2623B76E00C14E74 /* Assets.xcassets */,
+				AE2A6B312623B76E00C14E74 /* LaunchScreen.storyboard */,
+				AE2A6B342623B76E00C14E74 /* Info.plist */,
+			);
+			path = RoundedCornerPolygon;
+			sourceTree = "<group>";
+		};
+		AE2A6B3C2623B76E00C14E74 /* RoundedCornerPolygonTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE2A6B3D2623B76E00C14E74 /* RoundedCornerPolygonTests.swift */,
+				AE2A6B3F2623B76E00C14E74 /* Info.plist */,
+			);
+			path = RoundedCornerPolygonTests;
+			sourceTree = "<group>";
+		};
+		AE2A6B472623B76E00C14E74 /* RoundedCornerPolygonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AE2A6B482623B76E00C14E74 /* RoundedCornerPolygonUITests.swift */,
+				AE2A6B4A2623B76E00C14E74 /* Info.plist */,
+			);
+			path = RoundedCornerPolygonUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE2A6B222623B76B00C14E74 /* RoundedCornerPolygon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE2A6B4D2623B76E00C14E74 /* Build configuration list for PBXNativeTarget "RoundedCornerPolygon" */;
+			buildPhases = (
+				AE2A6B1F2623B76B00C14E74 /* Sources */,
+				AE2A6B202623B76B00C14E74 /* Frameworks */,
+				AE2A6B212623B76B00C14E74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoundedCornerPolygon;
+			productName = RoundedCornerPolygon;
+			productReference = AE2A6B232623B76B00C14E74 /* RoundedCornerPolygon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE2A6B382623B76E00C14E74 /* RoundedCornerPolygonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE2A6B502623B76E00C14E74 /* Build configuration list for PBXNativeTarget "RoundedCornerPolygonTests" */;
+			buildPhases = (
+				AE2A6B352623B76E00C14E74 /* Sources */,
+				AE2A6B362623B76E00C14E74 /* Frameworks */,
+				AE2A6B372623B76E00C14E74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE2A6B3B2623B76E00C14E74 /* PBXTargetDependency */,
+			);
+			name = RoundedCornerPolygonTests;
+			productName = RoundedCornerPolygonTests;
+			productReference = AE2A6B392623B76E00C14E74 /* RoundedCornerPolygonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AE2A6B432623B76E00C14E74 /* RoundedCornerPolygonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE2A6B532623B76E00C14E74 /* Build configuration list for PBXNativeTarget "RoundedCornerPolygonUITests" */;
+			buildPhases = (
+				AE2A6B402623B76E00C14E74 /* Sources */,
+				AE2A6B412623B76E00C14E74 /* Frameworks */,
+				AE2A6B422623B76E00C14E74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE2A6B462623B76E00C14E74 /* PBXTargetDependency */,
+			);
+			name = RoundedCornerPolygonUITests;
+			productName = RoundedCornerPolygonUITests;
+			productReference = AE2A6B442623B76E00C14E74 /* RoundedCornerPolygonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE2A6B1B2623B76B00C14E74 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					AE2A6B222623B76B00C14E74 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					AE2A6B382623B76E00C14E74 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = AE2A6B222623B76B00C14E74;
+					};
+					AE2A6B432623B76E00C14E74 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = AE2A6B222623B76B00C14E74;
+					};
+				};
+			};
+			buildConfigurationList = AE2A6B1E2623B76B00C14E74 /* Build configuration list for PBXProject "RoundedCornerPolygon" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE2A6B1A2623B76B00C14E74;
+			productRefGroup = AE2A6B242623B76B00C14E74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE2A6B222623B76B00C14E74 /* RoundedCornerPolygon */,
+				AE2A6B382623B76E00C14E74 /* RoundedCornerPolygonTests */,
+				AE2A6B432623B76E00C14E74 /* RoundedCornerPolygonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE2A6B212623B76B00C14E74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE2A6B332623B76E00C14E74 /* LaunchScreen.storyboard in Resources */,
+				AE2A6B302623B76E00C14E74 /* Assets.xcassets in Resources */,
+				AE2A6B2E2623B76B00C14E74 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE2A6B372623B76E00C14E74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE2A6B422623B76E00C14E74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE2A6B1F2623B76B00C14E74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE2A6B2B2623B76B00C14E74 /* ViewController.swift in Sources */,
+				AE2A6B272623B76B00C14E74 /* AppDelegate.swift in Sources */,
+				AE2A6B292623B76B00C14E74 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE2A6B352623B76E00C14E74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE2A6B3E2623B76E00C14E74 /* RoundedCornerPolygonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE2A6B402623B76E00C14E74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE2A6B492623B76E00C14E74 /* RoundedCornerPolygonUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE2A6B3B2623B76E00C14E74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE2A6B222623B76B00C14E74 /* RoundedCornerPolygon */;
+			targetProxy = AE2A6B3A2623B76E00C14E74 /* PBXContainerItemProxy */;
+		};
+		AE2A6B462623B76E00C14E74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE2A6B222623B76B00C14E74 /* RoundedCornerPolygon */;
+			targetProxy = AE2A6B452623B76E00C14E74 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AE2A6B2C2623B76B00C14E74 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE2A6B2D2623B76B00C14E74 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE2A6B312623B76E00C14E74 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE2A6B322623B76E00C14E74 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE2A6B4B2623B76E00C14E74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE2A6B4C2623B76E00C14E74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE2A6B4E2623B76E00C14E74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RoundedCornerPolygon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wareto.RoundedCornerPolygon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE2A6B4F2623B76E00C14E74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RoundedCornerPolygon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wareto.RoundedCornerPolygon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AE2A6B512623B76E00C14E74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RoundedCornerPolygonTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wareto.RoundedCornerPolygonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoundedCornerPolygon.app/RoundedCornerPolygon";
+			};
+			name = Debug;
+		};
+		AE2A6B522623B76E00C14E74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RoundedCornerPolygonTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wareto.RoundedCornerPolygonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoundedCornerPolygon.app/RoundedCornerPolygon";
+			};
+			name = Release;
+		};
+		AE2A6B542623B76E00C14E74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RoundedCornerPolygonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wareto.RoundedCornerPolygonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RoundedCornerPolygon;
+			};
+			name = Debug;
+		};
+		AE2A6B552623B76E00C14E74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RoundedCornerPolygonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wareto.RoundedCornerPolygonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RoundedCornerPolygon;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE2A6B1E2623B76B00C14E74 /* Build configuration list for PBXProject "RoundedCornerPolygon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE2A6B4B2623B76E00C14E74 /* Debug */,
+				AE2A6B4C2623B76E00C14E74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE2A6B4D2623B76E00C14E74 /* Build configuration list for PBXNativeTarget "RoundedCornerPolygon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE2A6B4E2623B76E00C14E74 /* Debug */,
+				AE2A6B4F2623B76E00C14E74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE2A6B502623B76E00C14E74 /* Build configuration list for PBXNativeTarget "RoundedCornerPolygonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE2A6B512623B76E00C14E74 /* Debug */,
+				AE2A6B522623B76E00C14E74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE2A6B532623B76E00C14E74 /* Build configuration list for PBXNativeTarget "RoundedCornerPolygonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE2A6B542623B76E00C14E74 /* Debug */,
+				AE2A6B552623B76E00C14E74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE2A6B1B2623B76B00C14E74 /* Project object */;
+}

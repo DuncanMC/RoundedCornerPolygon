@@ -16,26 +16,27 @@ class ViewController: UIViewController {
     /// An array of UISwitches which will control which corners of our poygon are rounded
     var polygonSwitches = [UISwitch]()
 
+
     /// The vertexes of our polgon.
-    var cgPoints = [CGPoint(x:  30, y:  20), //point 0
-                    CGPoint(x:  80, y:  60), //point 1
-                    CGPoint(x:  10, y: 100), //point 2
-                    CGPoint(x:  60, y: 170), //point 3
-                    CGPoint(x: 100, y: 120), //point 4
-                    CGPoint(x: 150, y: 160), //point 5
-                    CGPoint(x: 190, y:  90), //point 6
-                    CGPoint(x: 120, y:  80), //point 7
-                    CGPoint(x: 140, y:  20), //point 8
+    var polygonPoints = [
+        PolygonPoint(point: CGPoint(x:  30, y:  20), isRounded: true, customCornerRadius: 5),
+        PolygonPoint(point: CGPoint(x:  80, y:  60), isRounded: false, customCornerRadius: 10),
+        PolygonPoint(point: CGPoint(x:  10, y: 100), isRounded: true, customCornerRadius: 30),
+        PolygonPoint(point: CGPoint(x:  60, y: 170), isRounded: false),
+        PolygonPoint(point: CGPoint(x: 100, y: 120), isRounded: true),
+        PolygonPoint(point: CGPoint(x: 150, y: 160), isRounded: false),
+        PolygonPoint(point: CGPoint(x: 190, y:  90), isRounded: true),
+        PolygonPoint(point: CGPoint(x: 120, y:  80), isRounded: false),
+        PolygonPoint(point: CGPoint(x: 140, y:  20), isRounded: true),
     ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        var polygonPoints = [PolygonPoint]()
 
-        // Loop through each of our cgPoints
-        for (index, point) in cgPoints.enumerated() {
+        // Loop through each of our `PolygonPoint`s
+        for (index, point) in polygonPoints.enumerated() {
 
-            //Create a horizontal stack view for this point (to contain a label and switch
+            //Create a horizontal stack view for this point (to contain a label and switch)
             let hStack = UIStackView()
             hStack.axis = .horizontal
             hStack.spacing = 10
@@ -53,7 +54,7 @@ class ViewController: UIViewController {
                 self.buildPolygonPoints()
             }
             aSwitch.addAction( action, for: .valueChanged)
-            aSwitch.isOn = true
+            aSwitch.isOn = point.isRounded
 
             // Add the switch to the horizontal stack for this point
             hStack.addArrangedSubview(aSwitch)
@@ -61,8 +62,6 @@ class ViewController: UIViewController {
             // Add the switch to an array of switches for each point so we can query their states
             polygonSwitches.append(aSwitch)
 
-            // Create a PolygonPoint struct for this point and add it to our array
-            polygonPoints.append(PolygonPoint(point: point, isRounded: false))
 
             //Add this point's label and switch to the vertical stackview for the window.
             stackView.addArrangedSubview(hStack)
@@ -75,10 +74,12 @@ class ViewController: UIViewController {
     }
 
     func buildPolygonPoints() {
-        let polygonPoints = zip(cgPoints, polygonSwitches)
+
+        let newPolygonPoints = zip(polygonPoints, polygonSwitches)
             .map {
-                PolygonPoint(point: $0, isRounded: $1.isOn )
+                PolygonPoint(previousPoint: $0, isRounded: $1.isOn )
             }
+        polygonPoints = newPolygonPoints
         // Install the array of 'PolygonPoint's into the RoundedCornerPolygonView
         // That causes the RoundedCornerPolygonView to draw itself.
         polygonView.points = polygonPoints

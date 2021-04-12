@@ -15,6 +15,7 @@
 		AE2A6B332623B76E00C14E74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE2A6B312623B76E00C14E74 /* LaunchScreen.storyboard */; };
 		AE2A6B3E2623B76E00C14E74 /* RoundedCornerPolygonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2A6B3D2623B76E00C14E74 /* RoundedCornerPolygonTests.swift */; };
 		AE2A6B492623B76E00C14E74 /* RoundedCornerPolygonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2A6B482623B76E00C14E74 /* RoundedCornerPolygonUITests.swift */; };
+		AE2A6B5A2623B79300C14E74 /* RoundedCornerPolygonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2A6B592623B79300C14E74 /* RoundedCornerPolygonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		AE2A6B442623B76E00C14E74 /* RoundedCornerPolygonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoundedCornerPolygonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE2A6B482623B76E00C14E74 /* RoundedCornerPolygonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerPolygonUITests.swift; sourceTree = "<group>"; };
 		AE2A6B4A2623B76E00C14E74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE2A6B592623B79300C14E74 /* RoundedCornerPolygonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerPolygonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		AE2A6B252623B76B00C14E74 /* RoundedCornerPolygon */ = {
 			isa = PBXGroup;
 			children = (
+				AE2A6B592623B79300C14E74 /* RoundedCornerPolygonView.swift */,
 				AE2A6B262623B76B00C14E74 /* AppDelegate.swift */,
 				AE2A6B282623B76B00C14E74 /* SceneDelegate.swift */,
 				AE2A6B2A2623B76B00C14E74 /* ViewController.swift */,
@@ -260,6 +263,7 @@
 			files = (
 				AE2A6B2B2623B76B00C14E74 /* ViewController.swift in Sources */,
 				AE2A6B272623B76B00C14E74 /* AppDelegate.swift in Sources */,
+				AE2A6B5A2623B79300C14E74 /* RoundedCornerPolygonView.swift in Sources */,
 				AE2A6B292623B76B00C14E74 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

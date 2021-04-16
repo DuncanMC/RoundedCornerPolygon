@@ -2,7 +2,7 @@ RoundedCornerPolygon
 
 This project demonstrates an easy way to create irregular polygons with a mixture of sharp and rounded corners:
 
-
+![app screenshot](https://github.com/DuncanMC/RoundedCornerPolygon/blob/main/RoundedCornerPolygon%20app%20screenshot.png)
 
 ## The background
 

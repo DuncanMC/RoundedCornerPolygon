@@ -53,6 +53,7 @@
 		AE2A6B4A2623B76E00C14E74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE2A6B592623B79300C14E74 /* RoundedCornerPolygonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerPolygonView.swift; sourceTree = "<group>"; };
 		AE40B45126291EA1000437E0 /* CustomPolygons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPolygons.swift; sourceTree = "<group>"; };
+		AE40B456262929E4000437E0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				AE2A6B592623B79300C14E74 /* RoundedCornerPolygonView.swift */,
+				AE40B456262929E4000437E0 /* README.md */,
 				AE40B45126291EA1000437E0 /* CustomPolygons.swift */,
 				AE2A6B262623B76B00C14E74 /* AppDelegate.swift */,
 				AE2A6B282623B76B00C14E74 /* SceneDelegate.swift */,

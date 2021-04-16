@@ -77,6 +77,8 @@ public func buildPolygonPathFrom(points: [PolygonPoint], defaultCornerRadius: CG
 }
 ```
 
+##The App view controller and UI
+
 The app creates a sample polygon using an array of coordinates, plus random values for isRounded and customCornerRadius. It installs the custom polygon into a simple subclass of `UIView`, `RoundedCornerPolygonView`. That class 
 
 has a class var layerClass:
@@ -90,4 +92,4 @@ has a class var layerClass:
 
 It also has a public var `points`, of type `[PolygonPoint]`. When you install an array of `PolygonPoint` into it's points var, it attempts to build a polygon path (using the  `buildPolygonPathFrom(points:defaultCornerRadius:)` method described above) and install it into the view's layer's path. (The view's layer is a `CAShapeLayer` thanks to the definition of `layerClass` above.)
 
-The app's view controller builds a stack view containing an array of switches, one for each vertex in the polygon. It sets each switch to the value of `isRounded` for that vertex
+The app's view controller builds a stack view containing an array of switches, one for each vertex in the polygon. It sets each switch to the (random) value of `isRounded` for that vertex. If the user toggles any of the switches, the app rebuilds the points array and installs it into the `RoundedCornerPolygonView`, causing it to re-draw itself.

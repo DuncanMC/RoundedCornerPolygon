@@ -19,15 +19,15 @@ class ViewController: UIViewController {
 
     /// The vertexes of our polgon.
     var polygonPoints = [
-        PolygonPoint(point: CGPoint(x:  30, y:  20), isRounded: true, customCornerRadius: 5),
-        PolygonPoint(point: CGPoint(x:  80, y:  60), isRounded: false, customCornerRadius: 10),
-        PolygonPoint(point: CGPoint(x:  10, y: 100), isRounded: true, customCornerRadius: 30),
-        PolygonPoint(point: CGPoint(x:  60, y: 170), isRounded: false),
-        PolygonPoint(point: CGPoint(x: 100, y: 120), isRounded: true),
-        PolygonPoint(point: CGPoint(x: 150, y: 160), isRounded: false),
-        PolygonPoint(point: CGPoint(x: 190, y:  90), isRounded: true),
-        PolygonPoint(point: CGPoint(x: 120, y:  80), isRounded: false),
-        PolygonPoint(point: CGPoint(x: 140, y:  20), isRounded: true),
+        PolygonPoint(point: CGPoint(x:  30, y:  20), isRounded: Bool.random(), customCornerRadius: CGFloat.random(in: 5...20)),
+        PolygonPoint(point: CGPoint(x:  80, y:  60), isRounded: Bool.random(), customCornerRadius: CGFloat.random(in: 5...15)),
+        PolygonPoint(point: CGPoint(x:  10, y: 100), isRounded: Bool.random(), customCornerRadius: CGFloat.random(in: 10...30)),
+        PolygonPoint(point: CGPoint(x:  60, y: 170), isRounded: Bool.random(), customCornerRadius: CGFloat.random(in: 10...20)),
+        PolygonPoint(point: CGPoint(x: 100, y: 120), isRounded: Bool.random(), customCornerRadius: CGFloat.random(in: 10...20)),
+        PolygonPoint(point: CGPoint(x: 150, y: 160), isRounded: Bool.random(), customCornerRadius: CGFloat.random(in: 5...20)),
+        PolygonPoint(point: CGPoint(x: 190, y:  90), isRounded: Bool.random(), customCornerRadius: CGFloat.random(in: 5...20)),
+        PolygonPoint(point: CGPoint(x: 120, y:  80), isRounded: Bool.random(), customCornerRadius: CGFloat.random(in: 5...20)),
+        PolygonPoint(point: CGPoint(x: 140, y:  20), isRounded: Bool.random(), customCornerRadius: CGFloat.random(in: 5...20)),
     ]
 
     override func viewDidLoad() {

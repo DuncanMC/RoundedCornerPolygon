@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        #if false
+        #if true
         polygonPoints = roundedRectCorners( rect: polygonView.bounds.insetBy(dx: 20.0, dy: 20.0),
                                             byRoundingCorners: [.allCorners],
                                             cornerRadius: 30)

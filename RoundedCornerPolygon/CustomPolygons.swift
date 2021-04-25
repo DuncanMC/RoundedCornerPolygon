@@ -24,6 +24,14 @@ public struct PolygonPoint {
     }
 }
 
+/**
+ Returns an array of PolygonPoint structs describing a rounded rectangle with a mixture of rounded and sharp corners, as specified by the options in `corners`
+
+ - Parameter  rect: The starting rectangle who's corners you wish to round
+ - Parameter corners: The corners to round
+ - Parameter cornerRadius: The corner radius to use
+ - Returns: An array of PolygonPoint structs describing the desired rounded-corner rectangle
+ */
 public func roundedRectCorners(rect: CGRect, byRoundingCorners corners: UIRectCorner, cornerRadius: CGFloat) -> [PolygonPoint] {
     return [
         PolygonPoint(point: rect.origin, isRounded: corners.contains(.topLeft), customCornerRadius: cornerRadius),
@@ -33,6 +41,16 @@ public func roundedRectCorners(rect: CGRect, byRoundingCorners corners: UIRectCo
     ]
 }
 
+/**
+This function works like the UIBezierPath initializer `init(roundedRect:byRoundingCorners:cornerRadii:)` It returns a CGPath a rounded rectangle with a mixture of rounded and sharp corners, as specified by the options in `corners`.
+
+ Unlike the UIBezierPath `init(roundedRect:byRoundingCorners:cornerRadii:` intitializer, The CGPath that is returned by this function will animate smoothly from rounded to non-rounded corners.
+
+ - Parameter  rect: The starting rectangle who's corners you wish to round
+ - Parameter corners: The corners to round
+ - Parameter cornerRadius: The corner radius to use
+ - Returns: A CGPath containing for the rounded rectangle.
+*/
 public func roundedRectPath(rect: CGRect, byRoundingCorners corners: UIRectCorner, cornerRadius: CGFloat) -> CGPath {
     let rectCorners = roundedRectCorners(rect: rect, byRoundingCorners:  corners, cornerRadius: cornerRadius)
     return buildPolygonPathFrom(points: rectCorners, defaultCornerRadius: cornerRadius)

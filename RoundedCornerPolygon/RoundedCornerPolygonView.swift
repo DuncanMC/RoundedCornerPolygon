@@ -45,9 +45,7 @@ class RoundedCornerPolygonView: UIView {
     var cornerRadius: CGFloat = 15 {
         didSet {
             drawPoints() // Draw each vertex into another layer if requested.
-
             // build and install the polygon path into our (shape) layer
-            let layer = self.layer as! CAShapeLayer
             updatePath()
         }
     }
@@ -59,9 +57,7 @@ class RoundedCornerPolygonView: UIView {
                 return
             }
             drawPoints() // Draw each vertex into another layer if requested.
-
             // build and install the polygon path into our (shape) layer
-            let layer = self.layer as! CAShapeLayer
             updatePath()
         }
     }

@@ -24,6 +24,20 @@ public struct PolygonPoint {
     }
 }
 
+public func roundedRectCorners(rect: CGRect, byRoundingCorners corners: UIRectCorner, cornerRadius: CGFloat) -> [PolygonPoint] {
+    return [
+        PolygonPoint(point: rect.origin, isRounded: corners.contains(.topLeft), customCornerRadius: cornerRadius),
+        PolygonPoint(point: CGPoint(x: rect.maxX, y: rect.origin.y), isRounded: corners.contains(.topRight), customCornerRadius: cornerRadius),
+        PolygonPoint(point: CGPoint(x: rect.maxX, y: rect.maxY), isRounded: corners.contains(.bottomRight), customCornerRadius: cornerRadius),
+        PolygonPoint(point: CGPoint(x: rect.origin.x, y: rect.maxY), isRounded: corners.contains(.bottomLeft), customCornerRadius: cornerRadius),
+    ]
+}
+
+public func roundedRectPath(rect: CGRect, byRoundingCorners corners: UIRectCorner, cornerRadius: CGFloat) -> CGPath {
+    let rectCorners = roundedRectCorners(rect: rect, byRoundingCorners:  corners, cornerRadius: cornerRadius)
+    return buildPolygonPathFrom(points: rectCorners, defaultCornerRadius: cornerRadius)
+}
+
 /**
  A function to create and return a`CGPath` of a polygon from an array of `PolygonPoint`s. For each `PolygonPoint`, if its `isRounded` property is true, that point's vertex is rounded in the resulsting path.
  - Parameter points: The array of `PolygonPoint`s to use in buliding the polygon.

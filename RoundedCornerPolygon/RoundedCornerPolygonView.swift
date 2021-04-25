@@ -23,13 +23,32 @@ class RoundedCornerPolygonView: UIView {
         }
     }
 
+    public var animatePathChanges: Bool = true
+
+    func updatePath() {
+        guard let layer = self.layer as? CAShapeLayer else { return }
+        let newPath = buildPolygonPathFrom(points: points, defaultCornerRadius: cornerRadius)
+        if !animatePathChanges || layer.path == nil {
+            layer.path = newPath
+        } else {
+            let animation = CABasicAnimation(keyPath: "path")
+            animation.duration = 0.3
+            animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+            animation.fromValue = layer.path
+            animation.toValue = newPath
+            layer.add(animation, forKey: nil)
+            DispatchQueue.main.async {
+                layer.path = newPath
+            }
+        }
+    }
     var cornerRadius: CGFloat = 15 {
         didSet {
             drawPoints() // Draw each vertex into another layer if requested.
 
             // build and install the polygon path into our (shape) layer
             let layer = self.layer as! CAShapeLayer
-            layer.path = buildPolygonPathFrom(points: points, defaultCornerRadius: cornerRadius)
+            updatePath()
         }
     }
 
@@ -43,7 +62,7 @@ class RoundedCornerPolygonView: UIView {
 
             // build and install the polygon path into our (shape) layer
             let layer = self.layer as! CAShapeLayer
-            layer.path = buildPolygonPathFrom(points: points, defaultCornerRadius: cornerRadius)
+            updatePath()
         }
     }
 

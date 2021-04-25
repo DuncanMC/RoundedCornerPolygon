@@ -11,7 +11,9 @@ public struct PolygonPoint {
     let point: CGPoint
     let isRounded: Bool
     let customCornerRadius: CGFloat?
-    init(point: CGPoint, isRounded: Bool, customCornerRadius: CGFloat? = nil) {
+    init(point: CGPoint,
+         isRounded: Bool,
+         customCornerRadius: CGFloat? = nil) {
         self.point = point
         self.isRounded = isRounded
         self.customCornerRadius = customCornerRadius
@@ -41,15 +43,14 @@ public func buildPolygonPathFrom(points: [PolygonPoint], defaultCornerRadius: CG
 
     //Loop through the points in our polygon.
     for (index, point) in points.enumerated() {
-        // If this vertex is not rounded, just draw a line to it.
-        if !point.isRounded {
-            path.addLine(to: point.point)
-        } else {
-            //Draw an arc from the previous vertex (the current point), around this vertex, and pointing to the next
-            let nextIndex = (index+1) % points.count
-            let nextPoint = points[nextIndex]
-            path.addArc(tangent1End: point.point, tangent2End: nextPoint.point, radius: point.customCornerRadius ?? defaultCornerRadius)
+        //Draw an arc from the previous vertex (the current point), around this vertex, and pointing to the next
+        let nextIndex = (index+1) % points.count
+        let nextPoint = points[nextIndex]
+        var radius: CGFloat = 0 // For non-rounded points, use an arc radius of 0 (allows us to animate between rounded/non-rounded corners.)
+        if point.isRounded {
+            radius = point.customCornerRadius ?? defaultCornerRadius
         }
+        path.addArc(tangent1End: point.point, tangent2End: nextPoint.point, radius: radius)
     }
 
     // Close the path by drawing a line from the last vertex/corner to the midpoint between the last and first point
